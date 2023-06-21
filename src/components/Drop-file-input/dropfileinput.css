@@ -1,0 +1,36 @@
+.dropfileinput {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px dashed var(--txt-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--input-bg);
+}
+
+.dropfileinput input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropfileinput:hover,
+.dropfileinput.dragover {
+    opacity: 0.6;
+}
+
+.dropfileinput__label {
+    text-align: center;
+    color:var(--txt-second-color);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.dropfileinput__label img {
+    width: 100px;
+}
